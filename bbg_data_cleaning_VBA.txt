@@ -1,0 +1,55 @@
+Sub process()
+Dim items, strike, start_strike, strike_range As Integer
+Dim temp_settlement_date, temp_p_c, temp_symbol As String
+Dim contracts_settlement_date_array(5), contract_symbol_array(5), put_call_array(1) As Variant
+
+items = 8
+strike = 2.5
+start_strike = 10
+strike_range = 35
+
+contract_symbol_array(0) = "1"
+contract_symbol_array(1) = "2"
+contract_symbol_array(2) = "3"
+contract_symbol_array(3) = "4"
+contract_symbol_array(4) = "5"
+contract_symbol_array(5) = "6"
+
+put_call_array(0) = "C"
+put_call_array(1) = "P"
+
+For settlement_date_index = 0 To 5
+For p_c_index = 0 To 1
+temp_settlement_date = contracts_settlement_date_array(settlement_date_index)
+temp_p_c = put_call_array(p_c_index)
+temp_symbol = contract_symbol_array(settlement_date_index)
+
+Sheets(temp_symbol & temp_p_c).Activate
+
+For i = 0 To strike_range
+
+Cells(6, 1 + items * i) = "Dates" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 2 + items * i) = "PX_VOLUME" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 3 + items * i) = "PX_ASK" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 4 + items * i) = "PX_BID" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 5 + items * i) = "DELTA_MID" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 6 + items * i) = "GAMMA_MID" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 7 + items * i) = "VEGA_MID" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 8 + items * i) = "IVOL_MID" & temp_symbol & "_" & start_strike + strike * i
+
+Next i
+
+For k = 1 To 5
+
+Rows(1).Delete
+
+Next k
+
+Rows(2).Delete
+
+Next p_c_index
+Next settlement_date_index
+
+
+
+End Sub
