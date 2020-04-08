@@ -9,19 +9,19 @@ strike = 2.5
 start_strike = 10
 strike_range = 35
 
-contracts_settlement_date_array(0) = "VIX US 1/15/20 "
-contracts_settlement_date_array(1) = "VIX US 2/19/20 "
-contracts_settlement_date_array(2) = "VIX US 3/18/20 "
-contracts_settlement_date_array(3) = "VIX US 4/15/20 "
-contracts_settlement_date_array(4) = "VIX US 5/20/20 "
-contracts_settlement_date_array(5) = "VIX US 6/17/20 "
-
 contract_symbol_array(0) = "1"
 contract_symbol_array(1) = "2"
 contract_symbol_array(2) = "3"
 contract_symbol_array(3) = "4"
 contract_symbol_array(4) = "5"
 contract_symbol_array(5) = "6"
+
+contracts_settlement_date_array(0) = "VIX US 1/15/20 "
+contracts_settlement_date_array(1) = "VIX US 2/19/20 "
+contracts_settlement_date_array(2) = "VIX US 3/18/20 "
+contracts_settlement_date_array(3) = "VIX US 4/15/20 "
+contracts_settlement_date_array(4) = "VIX US 5/20/20 "
+contracts_settlement_date_array(5) = "VIX US 6/17/20 "
 
 put_call_array(0) = "C"
 put_call_array(1) = "P"
