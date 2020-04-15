@@ -54,7 +54,7 @@ Cells(6, 6 + items * i) = "GAMMA_MID"
 Cells(5, 7 + items * i).Formula = "=" & "BFieldInfo(" & Cells(6, 7 + items * i).Address & ")"
 Cells(6, 7 + items * i) = "VEGA_MID"
 Cells(5, 8 + items * i).Formula = "=" & "BFieldInfo(" & Cells(6, 8 + items * i).Address & ")"
-Cells(6, 8 + items * i) = "IVOL_MID"
+Cells(6, 8 + items * i) = "IVOL_LAST"
 
 Cells(4, 1 + items * i) = temp_settlement_date & temp_p_c & start_strike + strike * i & " Index"
 
