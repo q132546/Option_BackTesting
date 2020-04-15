@@ -35,7 +35,7 @@ Cells(6, 4 + items * i) = "PX_BID" & temp_symbol & "_" & start_strike + strike *
 Cells(6, 5 + items * i) = "DELTA_MID" & temp_symbol & "_" & start_strike + strike * i
 Cells(6, 6 + items * i) = "GAMMA_MID" & temp_symbol & "_" & start_strike + strike * i
 Cells(6, 7 + items * i) = "VEGA_MID" & temp_symbol & "_" & start_strike + strike * i
-Cells(6, 8 + items * i) = "IVOL_MID" & temp_symbol & "_" & start_strike + strike * i
+Cells(6, 8 + items * i) = "IVOL_LAST" & temp_symbol & "_" & start_strike + strike * i
 
 Next i
 
