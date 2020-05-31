@@ -1,0 +1,9 @@
+{
+  "Portfolio": {
+                "US-stocks": ["AAPL", "GILD", "MSFT", "QQQ", "SPY"],
+                "HK-stocks": ["稅前純益成長率(%)"],
+                "commodities": ["HE"],
+                "VIX": ["VX"]
+
+            }
+}
